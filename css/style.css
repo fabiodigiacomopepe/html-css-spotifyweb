@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 li {
@@ -38,11 +38,17 @@ li {
 
 .nav-left {
     line-height: 2;
+    filter: invert(42%) sepia(0%) saturate(3%) hue-rotate(257deg) brightness(92%) contrast(90%);
 }
 
-.nav-left i {
+.nav-left li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.nav-left img {
     width: 28px;
-    font-size: 22px;
 }
 
 .playlist-tab-right h2 {
@@ -53,7 +59,7 @@ li {
 
 .add-playlist i {
     color: black;
-    background-color: #5f5f5f;
+    background-color: #a3a3a3;
     padding: 10px;
     font-size: 20px;
     margin-right: 5px;
@@ -61,12 +67,45 @@ li {
 }
 
 .playlist-name {
-    overflow: scroll;
-    height: calc(100vh - 390px); /* 390px = 90 di player + 300px di contenuto che sta sopra (visto da inspector)*/
+    overflow: auto;
+    height: calc(100vh - 490px);
+}
+
+.install-app {
+    width: 100%;
+}
+
+.install {
+    padding: 12px 0;
+    border-bottom: 1px solid #a3a3a3;
+    display: flex;
+    gap: 10px;
+}
+
+.install img {
+    width: 20px;
+    filter: invert(38%) sepia(13%) saturate(0%) hue-rotate(275deg) brightness(104%) contrast(92%);
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.profile-icon img {
+    width: 20px;
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.profile-icon h3 {
+    color: #f7f7f7;
 }
 
 .playlist-name li {
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .right-side {
@@ -100,7 +139,7 @@ li {
 .main-center {
     max-height: 100%;
     padding: 100px 30px 50px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .section-selector {

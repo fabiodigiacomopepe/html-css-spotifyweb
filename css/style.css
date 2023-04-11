@@ -1,3 +1,4 @@
+/* regole generali pagina */
 * {
     margin: 0;
     padding: 0;
@@ -12,12 +13,20 @@ li {
     list-style-type: none;
 }
 
+
+
+
+
+/* regole sezione superiore */
 .upper {
     width: 100%;
     height: calc(100vh - 90px);
     display: flex;
 }
 
+
+
+/* regole barra laterale - sinistra */
 .left-side {
     height: 100%;
     width: 250px;
@@ -96,6 +105,7 @@ li {
 
 .profile-icon img {
     width: 20px;
+    height: 20px;
     background-color: #808080;
     border-radius: 50%;
 }
@@ -108,6 +118,9 @@ li {
     line-height: 2.5;
 }
 
+
+
+/* regole parte centrale - destra */
 .right-side {
     height: 100%;
     width: calc(100% - 250px);
@@ -115,6 +128,25 @@ li {
     position: relative;
 }
 
+.main-center {
+    max-height: 100%;
+    padding: 100px 30px 50px;
+    overflow: auto;
+}
+
+.section-selector {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    color: #74767b;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+/* regola barra superiore - destra */
 .top-nav-upgrade {
     position: absolute;
     top: 0;
@@ -136,25 +168,123 @@ li {
     font-size: 12px;
 }
 
-.main-center {
-    max-height: 100%;
-    padding: 100px 30px 50px;
-    overflow: auto;
-}
 
-.section-selector {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-    color: #74767b;
-    font-size: 12px;
-    font-weight: bold;
-}
 
+/* regole player - inferiore */
 .player {
     width: 100%;
     height: 90px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
 }
 
+
+
+/* regole player - inferiore - DESTRA */
+.left-side-player {
+    width: 250px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album-name-player {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.album-name-player img {
+    width: 45px;
+}
+
+.album-name-player h3 {
+    color: white;
+    font-size: 14px;
+}
+
+.album-name-player h6,
+.left-side-player {
+    color: #7e7e7e;
+}
+
+.favourite-folder {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* regole player - inferiore - CENTRO */
+.center-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up-row-control {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.up-row-control i {
+    font-size: 20px;
+}
+
+.fa-regular.fa-circle-play {
+    font-size: 40px;
+}
+
+.down-row-control {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.line-time {
+    position: relative;
+}
+
+.line-time hr {
+    width: 500px;
+    margin: 0 20px;
+    border: 2px solid #5a5a5a;
+}
+
+hr.hr-white {
+    border: 2px solid #c1c1c1;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-side-player {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    gap: 15px;
+}
+
+.line-time.volume hr {
+    width: 150px;
+    border: 2px solid #5a5a5a;
+    margin: 0 20px 0 0;
+}
+
+hr.hr-white.volume {
+    border: 2px solid #c1c1c1;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

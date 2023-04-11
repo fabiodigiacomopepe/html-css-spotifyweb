@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
 .upper {
     width: 100%;
     height: calc(100vh - 90px);
@@ -14,6 +22,51 @@
     height: 100%;
     width: 250px;
     background-color: #000000;
+    color: #5f5f5f;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 150px;
+    padding: 5px 0 25px;
+}
+
+.home-search-favourite {
+    margin-bottom: 20px;
+}
+
+.nav-left {
+    line-height: 2;
+}
+
+.nav-left i {
+    width: 28px;
+    font-size: 22px;
+}
+
+.playlist-tab-right h2 {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.add-playlist i {
+    color: black;
+    background-color: #5f5f5f;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.playlist-name {
+    overflow: scroll;
+    height: calc(100vh - 390px); /* 390px = 90 di player + 300px di contenuto che sta sopra (visto da inspector)*/
+}
+
+.playlist-name li {
+    line-height: 2;
 }
 
 .right-side {
@@ -29,14 +82,35 @@
     left: 0;
     height: 80px;
     width: 100%;
-    background-color: #080b12;
-    opacity: 60%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.upgrade-button {
+    margin-right: 15px;
+    padding: 12px 30px;
+    border: 1px solid white;
+    border-radius: 100px;
+    font-size: 12px;
 }
 
 .main-center {
     max-height: 100%;
     padding: 100px 30px 50px;
     overflow: scroll;
+}
+
+.section-selector {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    color: #74767b;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .player {

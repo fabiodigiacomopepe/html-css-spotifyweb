@@ -197,6 +197,17 @@ h4.createfor-subtitle {
 }
 
 
+/* regole parte centrale - destra - SM */
+@media screen and (min-width:576px) and (max-width:767px) {
+    .row-card {
+        flex-wrap: wrap;
+    }
+
+    .row-card .card {
+        width: 45%;
+    }
+}
+
 
 /* regole parte centrale - destra - MD */
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -234,10 +245,19 @@ h4.createfor-subtitle {
 }
 
 
+/* regola barra superiore - destra - SM */
+@media screen and (min-width:576px) and (max-width:767px) {
+    .section-selector {
+        flex-wrap: wrap;
+        font-size: 11px;
+    }
+}
+
 /* regola barra superiore - destra - MD */
 @media screen and (min-width:768px) and (max-width:991px) {
     .section-selector {
         flex-wrap: wrap;
+        font-size: 10px;
     }
 }
 
@@ -254,7 +274,7 @@ h4.createfor-subtitle {
 
 
 
-/* regole player - inferiore - DESTRA */
+/* regole player - inferiore - SINISTRA */
 .left-side-player {
     width: 250px;
     padding-left: 20px;
@@ -295,6 +315,7 @@ h4.createfor-subtitle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .up-row-control {
@@ -339,6 +360,9 @@ hr.hr-white {
     left: 0;
 }
 
+
+
+/* regole player - inferiore - DESTRA */
 .right-side-player {
     font-size: 16px;
     display: flex;
@@ -362,6 +386,50 @@ hr.hr-white.volume {
     left: 0;
 }
 
+
+/* regole player - inferiore - SM */
+@media screen and (min-width:576px) and (max-width:767px) {
+    .left-side-player {
+        width: 180px;
+        }
+
+    .line-time hr {
+        width: 100px;
+    }
+
+    hr.hr-white {
+        width: 20px;
+    }
+
+    .line-time.volume hr {
+        width: 50px;
+    }
+
+    hr.hr-white.volume {
+        width: 10px;
+    }
+
+    .favourite-folder {
+        flex-direction: column;
+    }
+
+    .up-row-control {
+        gap: 25px;
+    }
+    
+    .up-row-control i {
+        font-size: 24px;
+    }
+    
+    .fa-regular.fa-circle-play {
+        font-size: 30px;
+    }
+
+    .right-side-player {
+        font-size: 12px;
+        gap: 10px;
+    }
+}
 
 /* regole player - inferiore - MD */
 @media screen and (min-width:768px) and (max-width:991px) {

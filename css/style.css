@@ -13,6 +13,11 @@ li {
     list-style-type: none;
 }
 
+.active-selector {
+    position: absolute;
+    border: 2px solid #adff2f;
+}
+
 
 
 
@@ -47,7 +52,7 @@ li {
 
 .nav-left {
     line-height: 2;
-    filter: invert(42%) sepia(0%) saturate(3%) hue-rotate(257deg) brightness(92%) contrast(90%);
+    position: relative;
 }
 
 .nav-left li {
@@ -58,6 +63,13 @@ li {
 
 .nav-left img {
     width: 28px;
+    filter: invert(42%) sepia(0%) saturate(3%) hue-rotate(257deg) brightness(92%) contrast(90%);
+}
+
+.active-selector.left {
+    height: 28px;
+    top: 4px;
+    left: -20px;
 }
 
 .playlist-tab-right h2 {
@@ -132,6 +144,7 @@ li {
     max-height: 100%;
     padding: 100px 30px 50px;
     overflow: auto;
+    color: white;
 }
 
 .section-selector {
@@ -142,6 +155,45 @@ li {
     color: #74767b;
     font-size: 12px;
     font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.row-card {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+h4.createfor-subtitle {
+    margin-top: 8px;
+    color: #5a5d62;
+    font-size: 12px;
+}
+
+.row-card .card {
+    width: 16%;
+    text-align: center;
+    line-height: 1;
+}
+
+.row-card .card img {
+    max-width: 100%;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.row-card .card h4 {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.row-card .card h6 {
+    font-size: 8px;
+    color: #5a5d62;
+}
+
+.row-card .card .circle-artist {
+    border-radius: 100px;
 }
 
 
@@ -276,7 +328,7 @@ hr.hr-white {
 }
 
 .line-time.volume hr {
-    width: 150px;
+    width: 120px;
     border: 2px solid #5a5a5a;
     margin: 0 20px 0 0;
 }

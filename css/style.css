@@ -31,6 +31,8 @@ li {
 
 
 
+
+
 /* regole barra laterale - sinistra */
 .left-side {
     height: 100%;
@@ -39,7 +41,7 @@ li {
     color: #5f5f5f;
     padding: 20px;
     font-weight: bold;
-    overflow: clip;
+    overflow: auto;
 }
 
 .logo {
@@ -90,7 +92,7 @@ li {
 
 .playlist-name {
     overflow: auto;
-    height: calc(100vh - 490px);
+    height: calc(100vh - 500px);
 }
 
 .install-app {
@@ -134,6 +136,7 @@ li {
 .left-side-xs {
     display: none;
 }
+
 
 /* regole barra laterale - sinistra - XS */
 @media screen and (max-width:576px) {
@@ -183,6 +186,8 @@ li {
         left: 3px;
     }
 }
+
+
 
 
 
@@ -252,9 +257,6 @@ h4.createfor-subtitle {
 }
 
 
-
-
-
 /* regole parte centrale - destra - XS */
 @media screen and (max-width:576px) {
     .right-side {
@@ -269,6 +271,7 @@ h4.createfor-subtitle {
         width: 45%;
     }
 }
+
 
 /* regole parte centrale - destra - SM */
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -292,6 +295,8 @@ h4.createfor-subtitle {
         width: 22%;
     }
 }
+
+
 
 
 
@@ -326,6 +331,7 @@ h4.createfor-subtitle {
     }
 }
 
+
 /* regola barra superiore - destra - SM */
 @media screen and (min-width:576px) and (max-width:767px) {
     .section-selector {
@@ -333,6 +339,7 @@ h4.createfor-subtitle {
         font-size: 11px;
     }
 }
+
 
 /* regola barra superiore - destra - MD */
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -344,6 +351,8 @@ h4.createfor-subtitle {
 
 
 
+
+
 /* regole player - inferiore */
 .player {
     max-width: 100%;
@@ -352,6 +361,8 @@ h4.createfor-subtitle {
     display: flex;
     justify-content: space-between;
 }
+
+
 
 
 
@@ -388,6 +399,8 @@ h4.createfor-subtitle {
     display: flex;
     gap: 10px;
 }
+
+
 
 
 
@@ -440,6 +453,8 @@ hr.hr-white {
     top: 0;
     left: 0;
 }
+
+
 
 
 
@@ -582,6 +597,7 @@ hr.hr-white.volume {
     }
 }
 
+
 /* regole player - inferiore - MD */
 @media screen and (min-width:768px) and (max-width:991px) {
     .line-time hr {
@@ -600,4 +616,3 @@ hr.hr-white.volume {
         width: 10px;
     }
 }
-    

@@ -79,6 +79,10 @@ a {
     filter: invert(42%) sepia(0%) saturate(3%) hue-rotate(257deg) brightness(92%) contrast(90%);
 }
 
+.nav-left-active img {
+    filter: none;
+}
+
 .active-selector.left {
     height: 28px;
     top: 4px;
@@ -197,6 +201,10 @@ a {
         width: 25px;
         margin-bottom: 4px;
         filter: invert(46%) sepia(0%) saturate(73%) hue-rotate(154deg) brightness(92%) contrast(103%);
+    }
+
+    .nav-left-xs-active img {
+        filter: none;
     }
 
     .install-app-xs {
@@ -699,7 +707,15 @@ hr.hr-white.volume {
 
     .album-name-player img {
         width: 30px;
-        }
+    }
+
+    .circle-ontimebar {
+        left: 25px;
+    }
+
+    .circle-ontimebar-volume {
+        left: 5px;
+    }
 }
 
 /* regole player - inferiore - super XS */

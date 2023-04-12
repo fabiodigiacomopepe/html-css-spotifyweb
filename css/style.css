@@ -343,6 +343,21 @@ h4.createfor-subtitle {
     .row-card .card {
         width: 45%;
     }
+
+    .card .fa-regular.fa-circle-play {
+        top: 48%;
+        left: 42%;
+        font-size: 35px;
+    }
+}
+
+/* regole parte centrale - destra - SUPER XS */
+@media screen and (max-width:400px) {
+    .card .fa-regular.fa-circle-play {
+        top: 48%;
+        left: 36%;
+        font-size: 35px;
+    }
 }
 
 
@@ -354,6 +369,11 @@ h4.createfor-subtitle {
 
     .row-card .card {
         width: 45%;
+    }
+
+    .card .fa-regular.fa-circle-play {
+        top: 48%;
+        left: 42%;
     }
 }
 
@@ -691,6 +711,14 @@ hr.hr-white.volume {
     .left-side-player {
         width: 100px;
     }
+
+    .circle-ontimebar {
+        left: 25px;
+    }
+
+    .circle-ontimebar-volume {
+        left: 3px;
+    }
 }
 
 
@@ -737,6 +765,14 @@ hr.hr-white.volume {
     hr.hr-white {
         width: 40px;
     }
+
+    .circle-ontimebar {
+        left: 45px;
+    }
+
+    .circle-ontimebar-volume {
+        left: 5px;
+    }
 }
 
 
@@ -756,5 +792,13 @@ hr.hr-white.volume {
 
     hr.hr-white.volume {
         width: 10px;
+    }
+
+    .circle-ontimebar {
+        left: 55px;
+    }
+
+    .circle-ontimebar-volume {
+        left: 5px;
     }
 }

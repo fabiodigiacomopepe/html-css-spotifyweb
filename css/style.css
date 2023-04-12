@@ -97,7 +97,7 @@ li {
 }
 
 .install {
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #a3a3a3;
     display: flex;
     gap: 10px;
@@ -183,7 +183,7 @@ h4.createfor-subtitle {
 }
 
 .row-card .card h4 {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 8px;
 }
 
@@ -194,6 +194,19 @@ h4.createfor-subtitle {
 
 .row-card .card .circle-artist {
     border-radius: 100px;
+}
+
+
+
+/* regole parte centrale - destra - MD */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .row-card {
+        flex-wrap: wrap;
+    }
+
+    .row-card .card {
+        width: 22%;
+    }
 }
 
 
@@ -221,10 +234,18 @@ h4.createfor-subtitle {
 }
 
 
+/* regola barra superiore - destra - MD */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .section-selector {
+        flex-wrap: wrap;
+    }
+}
+
+
 
 /* regole player - inferiore */
 .player {
-    width: 100%;
+    max-width: 100%;
     height: 90px;
     background-color: #282828;
     display: flex;
@@ -305,7 +326,7 @@ h4.createfor-subtitle {
 }
 
 .line-time hr {
-    width: 500px;
+    width: 400px;
     margin: 0 20px;
     border: 2px solid #5a5a5a;
 }
@@ -328,15 +349,36 @@ hr.hr-white {
 }
 
 .line-time.volume hr {
-    width: 120px;
+    width: 90px;
     border: 2px solid #5a5a5a;
     margin: 0 20px 0 0;
 }
 
 hr.hr-white.volume {
     border: 2px solid #c1c1c1;
-    width: 30px;
+    width: 20px;
     position: absolute;
     top: 0;
     left: 0;
 }
+
+
+/* regole player - inferiore - MD */
+@media screen and (min-width:768px) and (max-width:991px) {
+    .line-time hr {
+        width: 200px;
+    }
+
+    hr.hr-white {
+        width: 40px;
+    }
+
+    .line-time.volume hr {
+        width: 60px;
+    }
+
+    hr.hr-white.volume {
+        width: 10px;
+    }
+}
+    

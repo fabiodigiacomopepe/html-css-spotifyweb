@@ -18,6 +18,11 @@ li {
     border: 2px solid #adff2f;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 
@@ -64,6 +69,11 @@ li {
     margin-bottom: 5px;
 }
 
+.nav-left li:hover {
+    cursor: pointer;
+    color: white;
+}
+
 .nav-left img {
     width: 28px;
     filter: invert(42%) sepia(0%) saturate(3%) hue-rotate(257deg) brightness(92%) contrast(90%);
@@ -90,6 +100,11 @@ li {
     margin-bottom: 20px;
 }
 
+.add-playlist:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .playlist-name {
     overflow: auto;
     height: calc(100vh - 500px);
@@ -106,9 +121,19 @@ li {
     gap: 10px;
 }
 
+.install:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .install img {
     width: 20px;
     filter: invert(38%) sepia(13%) saturate(0%) hue-rotate(275deg) brightness(104%) contrast(92%);
+}
+
+.install:hover img {
+    filter: none;
+    cursor: pointer;
 }
 
 .profile-icon {
@@ -131,6 +156,11 @@ li {
 
 .playlist-name li {
     line-height: 2.5;
+}
+
+.playlist-name li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .left-side-xs {
@@ -218,6 +248,23 @@ li {
     margin-bottom: 40px;
 }
 
+.section-selector li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.active1 {
+    position: relative;
+}
+
+.selector {
+    position: absolute;
+    left: 30%;
+    top: 18px;
+    border-bottom: 2px solid #adff2f;
+    width: 35px;
+}
+
 .row-card {
     display: flex;
     gap: 8px;
@@ -236,10 +283,36 @@ h4.createfor-subtitle {
     line-height: 1;
 }
 
+.album-photo {
+    position: relative;
+}
+
+.album-photo i {
+    display: none;
+}
+
 .row-card .card img {
     max-width: 100%;
     margin-bottom: 8px;
     margin-top: 30px;
+}
+
+.row-card .card:hover {
+    cursor: pointer;
+}
+
+.row-card .card:hover .album-photo i {
+    display: block;
+}
+
+.row-card .card:hover img {
+    filter: opacity(0.4);
+}
+
+.card .fa-regular.fa-circle-play {
+    position: absolute;
+    top: 45%;
+    left: 35%;
 }
 
 .row-card .card h4 {
@@ -316,10 +389,18 @@ h4.createfor-subtitle {
 
 .upgrade-button {
     margin-right: 15px;
-    padding: 12px 30px;
     border: 1px solid white;
     border-radius: 100px;
     font-size: 12px;
+}
+
+.upgrade-button a {
+    padding: 12px 30px;
+    display: inline-block;
+}
+
+.upgrade-button:hover {
+    scale: 1.1;
 }
 
 
@@ -395,9 +476,20 @@ h4.createfor-subtitle {
     color: #7e7e7e;
 }
 
+.album-name-player h6:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
 .favourite-folder {
     display: flex;
     gap: 10px;
+}
+
+.favourite-folder i:hover {
+    cursor: pointer;
+    color: white;
 }
 
 
@@ -428,6 +520,10 @@ h4.createfor-subtitle {
     font-size: 40px;
 }
 
+.fa-regular.fa-circle-play:hover {
+    scale: 1.1;
+}
+
 .down-row-control {
     font-size: 12px;
     display: flex;
@@ -438,6 +534,10 @@ h4.createfor-subtitle {
 
 .line-time {
     position: relative;
+}
+
+.line-time:hover{
+    cursor: pointer;
 }
 
 .line-time hr {
@@ -452,6 +552,25 @@ hr.hr-white {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.circle-ontimebar {
+    height: 10px;
+    width: 10px;
+    background-color: #d8cdcd;
+    border-radius: 100%;
+    position: absolute;
+    left: 115px;
+    top: -3.5px;
+    display: none;
+}
+
+.down-row-control:hover hr.hr-white {
+    border: 2px solid #adff2f;
+}
+
+.down-row-control:hover .circle-ontimebar {
+    display: block;
 }
 
 
@@ -480,6 +599,29 @@ hr.hr-white.volume {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.line-time.volume:hover{
+    cursor: pointer;
+}
+
+.circle-ontimebar-volume {
+    height: 10px;
+    width: 10px;
+    background-color: #d8cdcd;
+    border-radius: 100%;
+    position: absolute;
+    left: 15px;
+    top: -3.5px;
+    display: none;
+}
+
+.line-time.volume:hover hr.hr-white.volume {
+    border: 2px solid #adff2f;
+}
+
+.line-time.volume:hover .circle-ontimebar-volume {
+    display: block;
 }
 
 

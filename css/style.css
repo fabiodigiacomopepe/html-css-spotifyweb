@@ -39,6 +39,7 @@ li {
     color: #5f5f5f;
     padding: 20px;
     font-weight: bold;
+    overflow: clip;
 }
 
 .logo {
@@ -135,7 +136,7 @@ li {
 }
 
 /* regole barra laterale - sinistra - XS */
-@media screen and (max-width:575px) {
+@media screen and (max-width:576px) {
     .left-side-xs {
         display: block;
     }
@@ -191,6 +192,7 @@ li {
     width: calc(100% - 250px);
     background-color: #141922;
     position: relative;
+    overflow: clip;
 }
 
 .main-center {
@@ -254,7 +256,7 @@ h4.createfor-subtitle {
 
 
 /* regole parte centrale - destra - XS */
-@media screen and (max-width:575px) {
+@media screen and (max-width:576px) {
     .right-side {
         width: calc(100% - 50px);
     }
@@ -317,7 +319,7 @@ h4.createfor-subtitle {
 
 
 /* regola barra superiore - destra - XS */
-@media screen and (max-width:575px) {
+@media screen and (max-width:576px) {
     .section-selector {
         flex-wrap: wrap;
         font-size: 14px;
@@ -467,7 +469,7 @@ hr.hr-white.volume {
 
 
 /* regole player - inferiore - XS */
-@media screen and (max-width:575px) {
+@media screen and (max-width:576px) {
     .left-side-player {
         width: 130px;
     }

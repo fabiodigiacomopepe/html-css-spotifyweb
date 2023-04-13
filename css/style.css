@@ -112,6 +112,7 @@ a {
 .playlist-name {
     overflow: auto;
     height: calc(100vh - 500px);
+    min-height: 50px;
 }
 
 .install-app {
@@ -317,10 +318,15 @@ h4.createfor-subtitle {
     filter: opacity(0.4);
 }
 
-.card .fa-regular.fa-circle-play {
+.circleplay-container {
     position: absolute;
-    top: 45%;
-    left: 35%;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row-card .card h4 {
@@ -353,18 +359,7 @@ h4.createfor-subtitle {
     }
 
     .card .fa-regular.fa-circle-play {
-        top: 48%;
-        left: 42%;
-        font-size: 35px;
-    }
-}
-
-/* regole parte centrale - destra - SUPER XS */
-@media screen and (max-width:400px) {
-    .card .fa-regular.fa-circle-play {
-        top: 48%;
-        left: 36%;
-        font-size: 35px;
+        font-size: 50px;
     }
 }
 
@@ -380,8 +375,7 @@ h4.createfor-subtitle {
     }
 
     .card .fa-regular.fa-circle-play {
-        top: 48%;
-        left: 42%;
+        font-size: 50px;
     }
 }
 

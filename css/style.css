@@ -44,14 +44,14 @@ a {
     width: 250px;
     background-color: #000000;
     color: #5f5f5f;
-    padding: 20px;
+    padding: 12px 20px;
     font-weight: bold;
     overflow: auto;
 }
 
 .logo {
-    width: 150px;
-    padding: 5px 0 25px;
+    width: 120px;
+    padding: 5px 0 20px;
 }
 
 .home-search-favourite {
@@ -101,7 +101,7 @@ a {
     padding: 10px;
     font-size: 20px;
     margin-right: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .add-playlist:hover {
@@ -111,7 +111,7 @@ a {
 
 .playlist-name {
     overflow: auto;
-    height: calc(100vh - 500px);
+    height: calc(100vh - 460px);
     min-height: 50px;
 }
 
@@ -157,6 +157,7 @@ a {
 
 .profile-icon h3 {
     color: #f7f7f7;
+    font-size: 15px;
 }
 
 .playlist-name li {
